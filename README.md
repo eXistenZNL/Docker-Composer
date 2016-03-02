@@ -6,6 +6,16 @@ This image holds Composer together with Git, Subversion and PHP 5.6 + required m
 
 It makes use of the runas functionality found in [my base image](https://hub.docker.com/r/existenz/base/) so this means we can enjoy both caching and token authentication, both of which use the .composer directory in your home folder.
 
+## TL;DR:
+
+Run composer right away without any headache!
+
+```bash
+alias composer='docker run --rm -i -t -e UID=$(id -u) -v ~/.composer:/home/.composer -v $(pwd):/cwd existenz/composer'
+
+composer help
+```
+
 ## Usage
 
 Running Composer as the current logged in user can be done like this:
