@@ -1,6 +1,6 @@
 # Composer
 
-This image holds Composer together with Git, Subversion and PHP 5.6 + required modules.
+This image holds Composer together with Git, Subversion and PHP 7 + required modules.
 
 [![](https://badge.imagelayers.io/existenz/composer:latest.svg)](https://imagelayers.io/?images=existenz/composer:latest 'Get your own badge on imagelayers.io')
 
